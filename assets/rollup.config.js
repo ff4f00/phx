@@ -26,6 +26,7 @@ export default {
       compilerOptions: {
         dev: !production
       },
+      css({ output: 'bundle.css' }), 
        
     }),
     
