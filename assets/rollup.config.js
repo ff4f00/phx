@@ -27,7 +27,7 @@ export default {
         dev: !production
       },
       
-      emitCss = true,
+      emitCss: true,
       css: css => {
         css.write('../priv/static/css/app.css');
       }
