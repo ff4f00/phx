@@ -26,7 +26,12 @@ export default {
       compilerOptions: {
         dev: !production
       },
+      
+      emitCss = true
       css({ output: 'bundle.css' }), 
+      css: css => {
+        css.write('../priv/static/css/app.css');
+      }
        
     }),
     
