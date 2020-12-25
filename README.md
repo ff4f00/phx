@@ -1,4 +1,13 @@
-# Phx
+# phx
+
+TO:DO
+1. SASS / SCSS
+2. ELM
+3. TEST | ELM + PHOENIX
+4. TEST | ROLLUP + PHOENIX
+5. TEST | ROLLUP + PHOENIX + SVELTE
+6. TEST | ROLLUP + PHOENIX + SVELTE + ELM
+
 
 To start your Phoenix server:
 
