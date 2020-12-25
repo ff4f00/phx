@@ -29,11 +29,13 @@ export default {
         dev: !production
       }
       // take css output and write it to priv/static
-      css: css => {
-        css.write('../priv/static/css/app.css');
-      }
     }),
-    css({ output: 'bundle.css' }),
+    
+    css: css =>({ 
+      css.write('../priv/static/css/app.css');
+    }),
+    
+    
     resolve({
       browser: true,
       dedupe: ['svelte']
