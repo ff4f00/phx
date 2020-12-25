@@ -2,7 +2,7 @@ import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
-import sveltePreprocess from 'svelte-preprocess';
+import sass, scss, typescript, globalStyle, babel, replace from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
 
@@ -12,8 +12,6 @@ const production = process.env.MIX_ENV == "prod";
 export default {
   // main entry point
   input: 'ts/main.ts',
-
-  // define output path & format and request sourcemaps
   output: {
     sourcemap: true,
     format: 'iife',
