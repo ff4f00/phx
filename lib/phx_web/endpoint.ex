@@ -7,7 +7,7 @@ defmodule PhxWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_phx_key",
-    signing_salt: "hsXXA9Ww"
+    signing_salt: "CWNcbgIX"
   ]
 
   socket "/socket", PhxWeb.UserSocket,

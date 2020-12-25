@@ -10,10 +10,10 @@ use Mix.Config
 # Configures the endpoint
 config :phx, PhxWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "GALPVhw8nYEQclD/9MpWP4iZ922N5QwOLfT2R1DET1gSsGu8MqQO41Y4djNFGLq5",
+  secret_key_base: "5z0S0mStVH9J2+W13gu9hIIEbCtVDxF+68XxQa/ug6haY4Br+Pmp9JH189cKe2zD",
   render_errors: [view: PhxWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Phx.PubSub,
-  live_view: [signing_salt: "qIHpRIFj"]
+  live_view: [signing_salt: "Kejfk1H0"]
 
 # Configures Elixir's Logger
 config :logger, :console,
