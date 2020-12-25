@@ -6,4 +6,4 @@
   h1 { color: #FF4F00; }
 </style>
 
-<h1>Hello {name}!</h1>
+<h1>Hello {x}!</h1>
