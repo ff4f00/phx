@@ -11,7 +11,7 @@ config :phx, PhxWeb.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: []
+  watchers: [yarn: ["watch", cd: Path.expand("../assets", __DIR__)]]
 
 # ## SSL Support
 #
