@@ -25,7 +25,8 @@ export default {
       compilerOptions: {
         dev: !production
       }
-      // take css output and write it to priv/static
+     
+      emitCss: true,
       css: css => {
         css.write('../priv/static/css/app.css');
       }
