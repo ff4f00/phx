@@ -28,9 +28,13 @@ export default {
       },
        
       emitCss: true,
+      css: css => {
+        css.write('../priv/static/css/app.css');
+      }
+      
     }),
     
-    css({ output: '../priv/static/css/app.css'}),
+    
     
     resolve({
       browser: true,
