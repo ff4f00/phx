@@ -31,9 +31,7 @@ export default {
       // take css output and write it to priv/static
     }),
     
-    css({ 
-      css.write('../priv/static/css/app.css');
-    }),
+    css({ output '../priv/static/css/app.css' }),
     
     
     resolve({
