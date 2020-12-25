@@ -30,7 +30,7 @@ export default {
       emitCss: true,
     }),
     
-    css => css({ css.write:'../priv/static/css/app.css'}),
+    css => css({ write:'../priv/static/css/app.css'}),
     
     resolve({
       browser: true,
