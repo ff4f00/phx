@@ -26,11 +26,14 @@ export default {
       compilerOptions: {
         dev: !production
       },
-      css({ output: './App.css' }), 
+       
       emitCss: true,
-      css: css => {
-        css.write('../priv/static/css/app.css');
-      }
+    }),
+    
+    css: css => ({ 
+       
+      css.write('../priv/static/css/app.css');
+     
     }),
     
     resolve({
