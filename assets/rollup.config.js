@@ -3,6 +3,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
+import typescript from '@rollup/plugin-typescript';
+import css from 'rollup-plugin-css-only';
 
 // it's production mode if MIX_ENV is "prod"
 const production = process.env.MIX_ENV == "prod";
@@ -31,7 +33,7 @@ export default {
         css.write('../priv/static/css/app.css');
       }
     }),
-
+    css({ output: 'bundle.css' }),
     resolve({
       browser: true,
       dedupe: ['svelte']
