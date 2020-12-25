@@ -24,7 +24,7 @@ export default {
       preprocess: sveltePreprocess(),
       compilerOptions: {
         dev: !production
-      }
+      },
      
       emitCss: true,
       css: css => {
