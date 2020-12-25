@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "build": "rollup --config",
+    "dev": "rollup --config --watch"
   },
   "dependencies": {
     "phoenix": "file:../deps/phoenix",
